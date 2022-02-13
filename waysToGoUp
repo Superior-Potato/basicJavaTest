@@ -1,0 +1,10 @@
+public static int waysToGoUp(int numOfStairs){
+        if(numOfStairs == 2)
+            return 2;
+        if(numOfStairs == 1)
+            return 1;
+        if(numOfStairs == 0)
+            return 1;
+
+        return waysToGoUp(numOfStairs-1) + waysToGoUp(numOfStairs-2);
+    }
